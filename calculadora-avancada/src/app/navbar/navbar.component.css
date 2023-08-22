@@ -1,0 +1,18 @@
+nav{
+  height: 150px;
+  max-height: 100%;
+}
+
+.img{
+  margin-left: 10ch;
+}
+
+a{
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: large;
+}
+
+li{
+  margin-left: 3ch;
+}

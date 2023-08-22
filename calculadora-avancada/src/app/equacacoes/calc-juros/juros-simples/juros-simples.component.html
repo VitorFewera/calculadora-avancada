@@ -1,0 +1,48 @@
+<div class="container">
+  <div class="row">
+    <app-escolhas-juros></app-escolhas-juros>
+  </div>
+
+  <div class="row">
+    <div class="col-md">
+      <p class="text-center">Juros Simples</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-floating mb-3 col">
+      <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com" name="c"
+             [(ngModel)]="c">
+      <label for="floatingInput" class="ms-2">Informe C ou a Capital</label>
+    </div>
+
+    <div class="form-floating mb-3 col">
+      <input type="number" class="form-control" id="floatingInput1" placeholder="name@example.com" name="i"
+             [(ngModel)]="i">
+      <label for="floatingInput" class="ms-2">informe I ou a taxa de juros</label>
+    </div>
+
+    <div class="form-floating mb-3 col">
+      <input type="number" class="form-control" id="floatingInput5" placeholder="name@example.com" name="t"
+             [(ngModel)]="t">
+      <label for="floatingInput" class="ms-2">informe T ou o tempo</label>
+    </div>
+
+    <div class="row justify-content-md-center">
+      <div class="form-floating mb-3 col-md-5 text-center">
+        <input type="number" class="form-control" id="floatingInput2" placeholder="name@example.com" disabled>
+        <label for="floatingInput" class="ms-2">Juros igual a {{service.juros}}, e o montante é igual
+          a {{service.montante}}</label>
+      </div>
+    </div>
+</div>
+
+<div class="row mt-4 mb-5">
+  <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+    <button type="button" class="btn btn-outline-secondary" (click)="calcular(t,c,i)">Calcular</button>
+    <button type="button" class="btn btn-outline-secondary" (click)="limpar()">Limpar</button>
+    <button type="button" class="btn btn-outline-dark" [routerLink]="['/tipo-formula']"> Voltar</button>
+  </div>
+</div>
+</div>
+

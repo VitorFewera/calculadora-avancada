@@ -1,0 +1,16 @@
+<h1 class="mb-5">Contato com o desenvolvimento</h1>
+<p class="mb-5">Caso tenha alguma sugestão, elogio, problema ou reclamação. Entre em contato por esse formulario de email:</p>
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Informe seu e-mail:</label>
+  <input type="email" class="form-control" id="exampleFormControlInput1" name="email" [(ngModel)]="email" required>
+</div>
+<div class="mb-3">
+  <label for="exampleFormControlTextarea1" class="form-label" >Mensagem:</label>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" [(ngModel)]="texto" name="texto" required></textarea>
+</div>
+
+<div class="col-12">
+  <button class="btn btn-outline-secondary me-4" type="submit" (click)="submit()">Enviar</button>
+  <button class="btn btn-outline-secondary me-4" type="submit" (click)="limpar()">Limpar</button>
+  <button class="btn btn-outline-secondary me-4" type="submit" [routerLink]="['/home']">Voltar</button>
+</div>

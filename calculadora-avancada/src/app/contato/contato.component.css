@@ -1,0 +1,15 @@
+h1{
+  font-size: 8ch;
+}
+
+p{
+  font-size: 2ch;
+}
+
+input{
+  max-width: 50%;
+}
+
+textarea{
+  max-width: 50%;
+}

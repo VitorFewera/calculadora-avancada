@@ -1,0 +1,20 @@
+p{
+  text-align: justify;
+}
+
+img{
+  width: 80%;
+  height: 80%;
+  flex: content;
+  align-items: center;
+}
+
+p {
+  text-align: justify;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}

@@ -1,0 +1,75 @@
+<form>
+  <div class="container">
+    <div class="row">
+
+
+      <div class=" d-grid gap-2 d-md-flex justify-content-md-end">
+        <a
+          href="https://brasilescola.uol.com.br/matematica/formula-bhaskara.htm#:~:text=PUBLICIDADE-,A%20f%C3%B3rmula%20de%20Bhaskara%20%C3%A9%20um%20m%C3%A9todo%20resolutivo%20para%20equa%C3%A7%C3%B5es,uso%20apenas%20de%20seus%20coeficientes."
+          target="_blank">
+          <button class="btn me-md-2 btn-outline-dark rounded-circle border-3 info" type="button">?
+          </button>
+        </a>
+      </div>
+
+      <div class="col">
+        <h1>Fórmula de Bhaskara</h1>
+      </div>
+
+      <div class="col mb-4 ms-4">
+        <img src="assets/img/formula1.jpg">
+      </div>
+
+    </div>
+
+    <div class="row">
+      <div class="form-floating mb-3 col">
+        <input type="number" name="a" class="form-control" id="floatingInput" placeholder="name@example.com"
+               [(ngModel)]="a">
+        <label for="floatingInput" class="ms-2">Informe o A ou x²</label>
+      </div>
+
+      <div class="form-floating mb-3 col">
+        <input type="number" name="b" class="form-control" id="floatingInput1" placeholder="name@example.com"
+               [(ngModel)]="b">
+        <label for="floatingInput" class="ms-2">Informe o B ou x</label>
+      </div>
+
+      <div class="form-floating mb-3 col">
+        <input type="number" name="c" class="form-control" id="floatingInput2" placeholder="name@example.com"
+               [(ngModel)]="c">
+        <label for="floatingInput" class="ms-2">Informe o C ou numeral</label>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="input-group flex-nowrap col">
+        <span class="input-group-text" id="delta">△ = Delta</span>
+        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping"
+               value="{{service.delta}}" disabled>
+      </div>
+
+      <div class="input-group flex-nowrap col">
+        <span class="input-group-text" id="x1">x¹</span>
+        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping"
+               value="{{service.x1}}" disabled>
+      </div>
+
+      <div class="input-group flex-nowrap col">
+        <span class="input-group-text" id="x2">x²</span>
+        <input type="text" class="form-control" placeholder="" aria-label="Username" aria-describedby="addon-wrapping"
+               value="{{service.x2}}" disabled>
+      </div>
+    </div>
+
+    <div class="row mt-4 mb-5">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+        <button type="button" class="btn btn-outline-secondary" (click)="calcular(a,b,c)">Calcular</button>
+        <button type="button" class="btn btn-outline-secondary" (click)="limpar()">Limpar</button>
+        <button type="button" class="btn btn-outline-dark" [routerLink]="['/tipo-formula']"> Voltar</button>
+      </div>
+    </div>
+  </div>
+</form>
+

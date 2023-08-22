@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="row">
+    <app-escolhas></app-escolhas>
+  </div>
+
+  <div class="row">
+    <div class="col-md">
+      <p class="text-center">Area do Losango</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-floating mb-3 col">
+      <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com" name="D"
+             [(ngModel)]="D">
+      <label for="floatingInput" class="ms-2">Informe o D ou o diagonal maior</label>
+    </div>
+
+    <div class="form-floating mb-3 col">
+      <input type="number" class="form-control" id="floatingInput1" placeholder="name@example.com" name="d"
+             [(ngModel)]="d">
+      <label for="floatingInput" class="ms-2">Informe o d ou o diagonal menor</label>
+    </div>
+
+    <div class="form-floating mb-3 col">
+      <input type="number" class="form-control" id="floatingInput2" placeholder="name@example.com"
+             value="{{service.aLosango}}" disabled>
+      <label for="floatingInput" class="ms-2">Area igual à</label>
+    </div>
+
+
+  </div>
+
+  <div class="row mt-4 mb-5">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <button type="button" class="btn btn-outline-secondary" (click)="calcular(d,D)">Calcular</button>
+      <button type="button" class="btn btn-outline-secondary" (click)="limpar()">Limpar</button>
+      <button type="button" class="btn btn-outline-dark" [routerLink]="['/tipo-formula']"> Voltar</button>
+    </div>
+  </div>
+</div>
+

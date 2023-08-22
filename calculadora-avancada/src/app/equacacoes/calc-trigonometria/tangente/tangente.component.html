@@ -1,0 +1,40 @@
+<div class="container">
+  <div class="row">
+    <app-escolhas-trigonometria></app-escolhas-trigonometria>
+  </div>
+
+  <div class="row">
+    <div class="col-md">
+      <p class="text-center">Valor da Tangente</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-floating mb-3 col">
+      <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com" name="b"
+             [(ngModel)]="catetoOposto">
+      <label for="floatingInput" class="ms-2">Informe o cateto oposto</label>
+    </div>
+
+    <div class="form-floating mb-3 col">
+      <input type="number" class="form-control" id="floatingInput1" placeholder="name@example.com" name="h"
+             [(ngModel)]="catetoAdjacente">
+      <label for="floatingInput" class="ms-2">Informe o cateto adjacente </label>
+    </div>
+
+    <div class="form-floating mb-3 col">
+      <input type="number" class="form-control" id="floatingInput2" placeholder="name@example.com"
+             value="{{service.tangente}}" disabled>
+      <label for="floatingInput" class="ms-2">Valor da Tangente igual à</label>
+    </div>
+  </div>
+
+  <div class="row mt-4 mb-5">
+    <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+      <button type="button" class="btn btn-outline-secondary" (click)="calcular(catetoAdjacente,catetoOposto)">Calcular</button>
+      <button type="button" class="btn btn-outline-secondary" (click)="limpar()">Limpar</button>
+      <button type="button" class="btn btn-outline-dark" [routerLink]="['/tipo-formula']"> Voltar</button>
+    </div>
+  </div>
+</div>
+
